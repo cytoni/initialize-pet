@@ -1,7 +1,10 @@
+import Title from "./components/Title";
+
 const App = () => {
   return (
     <div className="wrapper">
-      <h1>Hunde & Katzen</h1>
+      {/**Komponente extrahieren Name Title */}
+      <Title content="Maus und Henne" />
       <div className="animal">
         <div className="animal_image">
           <img className="entry" src="http://via.placeholder.com/300" alt="animal" />
