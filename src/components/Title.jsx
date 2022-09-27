@@ -1,5 +1,6 @@
-const Title = (pops) => {
-    return <h1>{prompt.content}</h1>;
+const Title = (props) => {
+    console.log(props);
+    return <h1>{props.content}</h1>;
 }
- 
+
 export default Title;
