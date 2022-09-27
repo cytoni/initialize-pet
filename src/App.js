@@ -1,40 +1,40 @@
-const App () => {
+const App = () => {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
       <h1>Hunde & Katzen</h1>
-      <div class="animal">
-        <div class="animal_image">
-          <img class="entry" src="http://via.placeholder.com/300" alt="animal" />
+      <div className="animal">
+        <div className="animal_image">
+          <img className="entry" src="http://via.placeholder.com/300" alt="animal" />
         </div>
 
-        <div class="animal_title">
-          <h2 class="entry">Enrico</h2>
+        <div className="animal_title">
+          <h2 className="entry">Enrico</h2>
         </div>
 
-        <div class="animal_body">
+        <div className="animal_body">
           <div>
-            <span class="label">Tierart:</span>
-            <span class="entry">Hund</span>
+            <span className="label">Tierart:</span>
+            <span className="entry">Hund</span>
           </div>
 
           <div>
-            <span class="label">Geschlecht:</span>
-            <span class="entry">menschlich</span>
+            <span className="label">Geschlecht:</span>
+            <span className="entry">menschlich</span>
           </div>
 
           <div>
-            <span class="label">Rasse:</span>
-            <span class="entry">{Rasse}</span>
+            <span className="label">Rasse:</span>
+            <span className="entry">Leika</span>
           </div>
 
           <div>
-            <span class="label">Alter:</span>
-            <span class="entry">12 Jahre</span>
+            <span className="label">Alter:</span>
+            <span className="entry">12 Jahre</span>
           </div>
         </div>
       </div>
 
-      <div class="controls">
+      <div className="controls">
         <button id="pre" disabled>zurück</button>
         <button id="next">vor</button>
       </div>
