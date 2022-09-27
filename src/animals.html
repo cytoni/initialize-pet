@@ -1,5 +1,14 @@
-const App () => {
-  return (
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="animals.js"></script>
+    <link rel="stylesheet" href="animals.css" />
+    <title>Hunde & Katzen</title>
+  </head>
+  <body>
     <div class="wrapper">
       <h1>Hunde & Katzen</h1>
       <div class="animal">
@@ -13,23 +22,23 @@ const App () => {
 
         <div class="animal_body">
           <div>
-            <span class="label">Name:</span>
-            <span class="entry">Enrico</span>
+            <span class="label">Tierart:</span>
+            <span class="entry">{Tierart}</span>
           </div>
 
           <div>
             <span class="label">Geschlecht:</span>
-            <span class="entry">menschlich</span>
+            <span class="entry">{Geschlecht}</span>
           </div>
 
           <div>
             <span class="label">Rasse:</span>
-            <span class="entry">Leika</span>
+            <span class="entry">{Rasse}</span>
           </div>
 
           <div>
             <span class="label">Alter:</span>
-            <span class="entry">12 Jahre</span>
+            <span class="entry">{Alter in Jahren}</span>
           </div>
         </div>
       </div>
@@ -39,6 +48,5 @@ const App () => {
         <button id="next">vor</button>
       </div>
     </div>
-  );
-};
-export default App;
+  </body>
+</html>

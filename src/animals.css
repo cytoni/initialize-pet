@@ -1,0 +1,178 @@
+:root {
+  font-size: 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.wrapper {
+  margin: 2rem auto 1rem;
+  max-width: 300px;
+}
+
+.animal {
+  max-width: 100%;
+  margin: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 30px 0px;
+  border-radius: 0.5rem;
+  overflow: clip;
+}
+
+h1 {
+  text-align: center;
+}
+
+.animal_title {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.animal_image {
+  width: 300px;
+  height: 300px;
+  overflow: clip;
+}
+
+.animal_body > div {
+  display: flex;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid darkgrey;
+}
+
+.animal_body > div:last-child {
+  border-bottom: 0px;
+}
+.label,
+.animal_body .entry {
+  width: 50%;
+  line-height: 1.5;
+}
+
+.label {
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+button {
+  border: none;
+  background: transparent;
+  flex: 1;
+  padding: 0.75rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+button:focus {
+  outline: 2px dotted grey;
+}
+
+#pre {
+  background: rgba(65, 62, 122, 1);
+}
+
+#pre:hover {
+  background: rgba(36, 34, 68, 1);
+}
+
+#pre:disabled {
+  background: rgba(65, 62, 122, 0.4);
+  cursor: not-allowed;
+}
+
+#next {
+  background: rgba(219, 26, 32, 1);
+}
+
+#next:hover {
+  background: rgba(146, 17, 21, 1);
+}
+
+#next:disabled {
+  background: rgba(219, 26, 32, 0.4);
+  cursor: not-allowed;
+}
