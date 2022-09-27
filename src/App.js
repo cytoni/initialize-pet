@@ -8,13 +8,13 @@ const App () => {
         </div>
 
         <div class="animal_title">
-          <h2 class="entry">{Tiername}</h2>
+          <h2 class="entry">Enrico</h2>
         </div>
 
         <div class="animal_body">
           <div>
-            <span class="label">Name:</span>
-            <span class="entry">Enrico</span>
+            <span class="label">Tierart:</span>
+            <span class="entry">Hund</span>
           </div>
 
           <div>
@@ -24,7 +24,7 @@ const App () => {
 
           <div>
             <span class="label">Rasse:</span>
-            <span class="entry">Leika</span>
+            <span class="entry">{Rasse}</span>
           </div>
 
           <div>
