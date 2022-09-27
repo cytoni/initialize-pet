@@ -1,11 +1,12 @@
 import Title from "./components/Title";
-import Animal from "./Animal/components/Animal";
+import Animal from "./components/Animal";
 
 const App = () => {
   return (
     <div className="wrapper">
       {/**Komponente extrahieren Name Title */}
       <Title content="Maus und Henne" age={15} />
+      {/**Komponente extrahieren Name Title */}
       <Animal />
 
       <div className="controls">

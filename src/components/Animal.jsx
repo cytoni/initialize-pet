@@ -1,9 +1,9 @@
+import AnimalImage from "./AnimalImgage";
+
 const Animal = () => {
     return (
         <div className="animal">
-        <div className="animal_image">
-          <img className="entry" src="http://via.placeholder.com/300" alt="animal" />
-        </div>
+        <AnimalImgage />
 
         <div className="animal_title">
           <h2 className="entry">Enrico</h2>
