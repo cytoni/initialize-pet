@@ -12,7 +12,7 @@ const Animal = ({tier}) => {
         <div className="animal">
         <AnimalImage name={name} />
         {/**Animal Title */}
-        <AnimalTitle title={name} />
+        <AnimalTitle name={name} />
 
         <div className="animal_body">
             {/**Tierart */}

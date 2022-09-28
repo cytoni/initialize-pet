@@ -1,27 +1,43 @@
 import Title from "./components/Title";
 import Animal from "./components/Animal";
 import animalData from "./animalData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   console.log(animalData[0]);
   
 //Use State benutzen
   const [counter, setCounter] = useState(0);
-  let [disabled, setDisabled] = useState(false);
+  let [disVor, setDisVor] = useState(false);
+  let [disZuruk, setDisZuruk] = useState(true);
+
+//UseEffect benutzen (bei Side Effect)
+useEffect(() => {
+  document.title = `Hilf ${animalData[counter].species} ${animalData[counter].name}`;
+}, [counter]);
 
   //let counter = 0;
   function handleNext() {
     if (counter < animalData.length - 1) {
-  setCounter(counter + 1);
+      setCounter(counter + 1);
+      setDisZuruk(false);
     }
-    else if (counter == animalData.length) {
-      setDisabled(true);
+    if (counter +1 === animalData.length - 1) {
+      setDisZuruk(false);
+      setDisVor(true);
     }
 }
 
 function handleBack() {
-  setCounter(counter - 1);
+   if (counter > 0) {
+    setDisVor(false);
+    setCounter(counter - 1);
+      }
+      if (counter - 1 === 0) {
+        setDisZuruk(true);
+
+      }
+//  setCounter(counter - 1);
 }
 
   return (
@@ -33,8 +49,8 @@ function handleBack() {
       <Animal tier={animalData[counter]}/>
 
       <div className="controls">
-        <button id="pre" onClick={handleBack} disabled={disabled}>zurück</button>
-        <button id="next" onClick={handleNext} disabled={disabled}>vor {counter}</button>
+        <button id="pre" onClick={handleBack} disabled={disZuruk}>zurück</button>
+        <button id="next" onClick={handleNext} disabled={disVor}>vor {counter}</button>
       </div>
     </div>
   );
