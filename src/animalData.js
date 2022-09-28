@@ -48,3 +48,5 @@ const animalData = [
     tags: ['Freigänger', 'kinderfreundlich'],
   },
 ];
+
+export default animalData;

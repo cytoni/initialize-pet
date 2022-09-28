@@ -1,34 +1,28 @@
-import AnimalImage from "./AnimalImgage";
+import AnimalImage from "./AnimalImage";
+import AnimalTitle from "./AnimalTitle";
+import Tierart from "./Tierart";
+import Geschlecht from "./Geschlecht";
+import Rasse from "./Rasse.jsx";
+import Age from "./Age.jsx";
 
-const Animal = () => {
+const Animal = ({tier}) => {
+    console.log(tier);
+    const {name, species, sex, race, birthday} = tier;
     return (
         <div className="animal">
-        <AnimalImgage />
-
-        <div className="animal_title">
-          <h2 className="entry">Enrico</h2>
-        </div>
+        <AnimalImage name={name} />
+        {/**Animal Title */}
+        <AnimalTitle title={name} />
 
         <div className="animal_body">
-          <div>
-            <span className="label">Tierart:</span>
-            <span className="entry">Hund</span>
-          </div>
-
-          <div>
-            <span className="label">Geschlecht:</span>
-            <span className="entry">menschlich</span>
-          </div>
-
-          <div>
-            <span className="label">Rasse:</span>
-            <span className="entry">Leika</span>
-          </div>
-
-          <div>
-            <span className="label">Alter:</span>
-            <span className="entry">12 Jahre</span>
-          </div>
+            {/**Tierart */}
+            <Tierart art={species} />
+             {/**Geschlecht */}
+             <Geschlecht sex={sex} />
+             {/**Rasse */}
+             <Rasse race={race} />
+             {/**Age */}
+             <Age birthday={birthday} />
         </div>
       </div>);
 }
