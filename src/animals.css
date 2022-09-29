@@ -176,3 +176,13 @@ button:focus {
   background: rgba(219, 26, 32, 0.4);
   cursor: not-allowed;
 }
+
+section {
+  width: 100%;
+  text-align: center;
+  margin-left: 30px;
+}
+.row {
+  display: flex;
+  gap: 30px;
+}

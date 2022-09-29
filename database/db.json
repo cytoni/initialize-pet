@@ -1,0 +1,83 @@
+{
+    "animals": [
+      {
+        "id": 1,
+        "name": "Enrico",
+        "species": "Hund",
+        "sex": "männlich",
+        "race": "Laika",
+        "birthday": "2009-11-02",
+        "tags": [
+          "kastriert",
+          "kinderfreundlich",
+          "viel Auslauf"
+        ],
+        "imgUrl": "enrico.webp"
+      },
+      {
+        "id": 2,
+        "name": "Tico",
+        "species": "Hund",
+        "sex": "männlich",
+        "race": "Dackel-Mix",
+        "birthday": "2019-09-28",
+        "tags": [
+          "Für Anfänger",
+          "viel Auslauf"
+        ],
+        "imgUrl": "tico.webp"
+      },
+      {
+        "id": 3,
+        "name": "Hilde",
+        "species": "Hund",
+        "sex": "weiblich",
+        "race": "Schnauzer-Mix",
+        "birthday": "2011-03-15",
+        "tags": [
+          "Stadthund",
+          "Mag Hunde"
+        ],
+        "imgUrl": "hilde.webp"
+      },
+      {
+        "id": 4,
+        "name": "Susi",
+        "species": "Katze",
+        "sex": "weiblich",
+        "race": "EKH",
+        "birthday": "2014-04-10",
+        "tags": [
+          "Wohnungskatze",
+          "Einzelgänger"
+        ],
+        "imgUrl": "susi.webp"
+      },
+      {
+        "id": 5,
+        "name": "Kalle",
+        "species": "Katze",
+        "sex": "männlich",
+        "race": "EKH",
+        "birthday": "2020-06-01",
+        "tags": [
+          "Freigänger",
+          "Mag Katzen"
+        ],
+        "imgUrl": "kalle.webp"
+      },
+      {
+        "id": 6,
+        "name": "Rosi",
+        "species": "Katze",
+        "sex": "weiblich",
+        "race": "EKH",
+        "birthday": "2016-08-22",
+        "tags": [
+          "Freigänger",
+          "kinderfreundlich"
+        ],
+        "imgUrl": "rosi.webp"
+      }
+    ]
+  }

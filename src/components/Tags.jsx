@@ -1,10 +1,10 @@
 //React
-const Tags = (props) => {
-    const tagListe = tags.map((tag) => <p>{tag}</p>);
+const Tags = (prop) => {
+    const Liste = prop.tags.map((tag, index) => <p key={index}>{tag}</p>);
     return ( 
         <div>
             <span className="label">Tags:</span>
-            <span className="entry">{tagListe}</span>
+            <span className="entry">{Liste}</span>
         </div>
      );
 };
